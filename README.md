@@ -1,0 +1,1 @@
+U ovome projektu ću napraviti 4-5 clasa koje cu pomocu add-migration and updatedatabase podignuti u sql bazu podataka , baza podatka ce sigurno biti u relationshipu 1:n i vrlo moguće n:n. Studenska mezna
