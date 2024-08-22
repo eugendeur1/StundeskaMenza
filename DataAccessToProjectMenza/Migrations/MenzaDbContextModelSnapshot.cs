@@ -40,7 +40,7 @@ namespace DataAccessToProjectMenza.Migrations
 
                     b.HasKey("Fakultet_Id");
 
-                    b.ToTable("Fakultets");
+                    b.ToTable("Fakultets", (string)null);
                 });
 
             modelBuilder.Entity("ModelMenza.Model.Obrok", b =>
@@ -60,7 +60,7 @@ namespace DataAccessToProjectMenza.Migrations
 
                     b.HasKey("Obrok_Id");
 
-                    b.ToTable("Obroci");
+                    b.ToTable("Obroci", (string)null);
                 });
 
             modelBuilder.Entity("ModelMenza.Model.Person", b =>
@@ -90,7 +90,7 @@ namespace DataAccessToProjectMenza.Migrations
 
                     b.HasIndex("Fakultet_Id");
 
-                    b.ToTable("Persons");
+                    b.ToTable("Persons", (string)null);
                 });
 
             modelBuilder.Entity("ModelMenza.Model.PersonDetail", b =>
@@ -109,7 +109,7 @@ namespace DataAccessToProjectMenza.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PersonDetails");
+                    b.ToTable("PersonDetails", (string)null);
                 });
 
             modelBuilder.Entity("ModelMenza.Model.StudentObrok", b =>
@@ -124,7 +124,7 @@ namespace DataAccessToProjectMenza.Migrations
 
                     b.HasIndex("ObrokId");
 
-                    b.ToTable("StudentObroci");
+                    b.ToTable("StudentObroci", (string)null);
                 });
 
             modelBuilder.Entity("ModelMenza.Model.Person", b =>

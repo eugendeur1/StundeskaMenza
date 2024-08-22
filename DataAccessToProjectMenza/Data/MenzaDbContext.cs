@@ -22,6 +22,7 @@ namespace DataAccessToProjectMenza.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentObrok>().HasKey(u => new { u.Id, u.ObrokId });
+
         }
     }
 }

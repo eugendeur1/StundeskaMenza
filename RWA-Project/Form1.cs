@@ -6,5 +6,17 @@ namespace RWA_Project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 frmStudents = new Form2();
+            frmStudents.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 frmStudents = new Form3();
+            frmStudents.ShowDialog();
+        }
     }
 }

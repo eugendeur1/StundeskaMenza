@@ -10,6 +10,7 @@ namespace ModelMenza.Model
 {
     public class PersonDetail
     {
+        
         public int Detail_Id { get; set; }
         public int Age { get; set; }
         public DateTime BirthDay { get; set; }
