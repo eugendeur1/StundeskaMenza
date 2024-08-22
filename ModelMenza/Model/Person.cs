@@ -12,5 +12,7 @@ namespace ModelMenza.Model
         public string Name { get; set; }
         public string Title { get; set; }
         public string YearOfStudy { get; set; }
+        public PersonDetail PersonDetail { get; set; }
+
     }
 }

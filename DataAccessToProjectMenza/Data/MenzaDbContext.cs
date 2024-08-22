@@ -11,6 +11,7 @@ namespace DataAccessToProjectMenza.Data
     public class MenzaDbContext : DbContext
     {
         public DbSet<Person> Persons { get; set; }
+        public DbSet<PersonDetail> PersonDetails { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer("Data Source=31.147.206.65;Persist Security Info=True;User ID=RWA2324_edeur22_User;Password=tI}?7>&&;Encrypt=True;Trust Server Certificate=True");
