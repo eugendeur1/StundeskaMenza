@@ -17,6 +17,7 @@ namespace ModelMenza.Model
         [ForeignKey("Fakultet")]
         public int Fakultet_Id { get; set; }
         public Fakultet Fakultet { get; set; }
+        public ICollection<StudentObrok> StudentObroci { get; set; }
 
     }
 }
