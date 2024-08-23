@@ -35,7 +35,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(260, 217);
+            button1.Location = new Point(271, 217);
             button1.Name = "button1";
             button1.Size = new Size(172, 62);
             button1.TabIndex = 0;
@@ -62,7 +62,8 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Studenska Menza ";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 

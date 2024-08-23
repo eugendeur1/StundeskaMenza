@@ -18,5 +18,10 @@ namespace RWA_Project
             Form3 frmStudents = new Form3();
             frmStudents.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

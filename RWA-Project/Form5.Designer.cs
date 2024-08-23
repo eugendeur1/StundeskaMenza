@@ -1,6 +1,6 @@
 ﻿namespace RWA_Project
 {
-    partial class Form3
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,72 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
             button1 = new Button();
-            label1 = new Label();
             button2 = new Button();
-            button3 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(26, 38);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(574, 385);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(519, 59);
+            button1.Location = new Point(690, 122);
             button1.Name = "button1";
-            button1.Size = new Size(148, 60);
-            button1.TabIndex = 0;
-            button1.Text = "Lista Svih Studenata";
+            button1.Size = new Size(122, 59);
+            button1.TabIndex = 1;
+            button1.Text = "Add Student";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ControlDarkDark;
-            label1.Location = new Point(44, 77);
-            label1.Name = "label1";
-            label1.Size = new Size(332, 21);
-            label1.TabIndex = 1;
-            label1.Text = "Dobro dosli u pretinac Korisnicke sluzbe ";
-            // 
             // button2
             // 
-            button2.Location = new Point(519, 174);
+            button2.Location = new Point(690, 258);
             button2.Name = "button2";
-            button2.Size = new Size(148, 60);
+            button2.Size = new Size(122, 59);
             button2.TabIndex = 2;
-            button2.Text = "Lista Fakulteta  ";
+            button2.Text = "Delete Student";
             button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            button3.Location = new Point(519, 291);
-            button3.Name = "button3";
-            button3.Size = new Size(148, 60);
-            button3.TabIndex = 3;
-            button3.Text = "Lista Svih Obroka";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // Form3
+            // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button3);
+            ClientSize = new Size(921, 549);
             Controls.Add(button2);
-            Controls.Add(label1);
             Controls.Add(button1);
-            Name = "Form3";
-            Text = "Korisnička Služba";
-            Load += Form3_Load;
+            Controls.Add(dataGridView1);
+            Name = "Form5";
+            Text = "Form5";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
+        private DataGridView dataGridView1;
         private Button button1;
-        private Label label1;
         private Button button2;
-        private Button button3;
     }
 }
