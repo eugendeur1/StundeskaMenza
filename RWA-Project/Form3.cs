@@ -27,5 +27,11 @@ namespace RWA_Project
             Form5 frmStudents = new Form5();
             frmStudents.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 frmStudents = new Form7();
+            frmStudents.ShowDialog();
+        }
     }
 }

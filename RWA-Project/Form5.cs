@@ -60,5 +60,42 @@ namespace RWA_Project
             Form6 frmStudents = new Form6();
             frmStudents.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Pronađi ID selektovanog studenta
+                int selectedStudentId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
+
+                // Potvrda brisanja
+                var confirmResult = MessageBox.Show("Da li ste sigurni da želite da obrišete ovog studenta?", "Potvrda brisanja", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    // Brisanje studenta iz baze podataka
+                    using (var context = new MenzaDbContext())
+                    {
+                        var studentToDelete = context.Persons.FirstOrDefault(p => p.Id == selectedStudentId);
+                        if (studentToDelete != null)
+                        {
+                            context.Persons.Remove(studentToDelete);
+                            context.SaveChanges();
+
+                            // Osvežavanje DataGridView-a
+                            LoadStudents();
+                            MessageBox.Show("Student je uspešno obrisan.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Student nije pronađen.");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Molimo odaberite studenta kojeg želite da obrišete.");
+            }
+        }
     }
 }

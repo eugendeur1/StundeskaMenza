@@ -30,7 +30,6 @@
         {
             button1 = new Button();
             label1 = new Label();
-            button2 = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
@@ -55,23 +54,15 @@
             label1.TabIndex = 1;
             label1.Text = "Dobro dosli u pretinac Korisnicke sluzbe ";
             // 
-            // button2
-            // 
-            button2.Location = new Point(519, 174);
-            button2.Name = "button2";
-            button2.Size = new Size(148, 60);
-            button2.TabIndex = 2;
-            button2.Text = "Lista Fakulteta  ";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
-            button3.Location = new Point(519, 291);
+            button3.Location = new Point(519, 230);
             button3.Name = "button3";
             button3.Size = new Size(148, 60);
             button3.TabIndex = 3;
             button3.Text = "Lista Svih Obroka";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form3
             // 
@@ -79,7 +70,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form3";
@@ -93,7 +83,6 @@
 
         private Button button1;
         private Label label1;
-        private Button button2;
         private Button button3;
     }
 }

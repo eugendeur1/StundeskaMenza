@@ -89,7 +89,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form2";
-            Text = "Student Login ";
+            Text = " ";
             ResumeLayout(false);
             PerformLayout();
         }

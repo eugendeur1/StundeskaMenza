@@ -14,5 +14,6 @@ namespace ModelMenza.Model
         public string Obrok_Name { get; set; }
         public int Price { get; set; }
         public ICollection<StudentObrok> StudentObroci { get; set; }
+        public ICollection<Order> Orders {  get; set; }
     }
 }
