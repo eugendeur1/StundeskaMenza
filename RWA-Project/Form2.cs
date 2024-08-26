@@ -25,11 +25,11 @@ namespace RWA_Project
 
                 if (person != null)
                 {
-                    int loggedInStudentId = person.Id; 
-                    Form4 newForm = new Form4(loggedInStudentId); 
+                    int loggedInStudentId = person.Id;
+                    Form4 newForm = new Form4(loggedInStudentId);
                     Hide();
                     newForm.ShowDialog();
-                    Show(); 
+                    Show();
                 }
                 else
                 {
@@ -37,6 +37,11 @@ namespace RWA_Project
                     MessageBox.Show("Pogrešno korisničko ime ili lozinka!");
                 }
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '*';
         }
     }
 }

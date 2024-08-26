@@ -15,7 +15,7 @@ namespace RWA_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 frmStudents = new Form3();
+            Form8 frmStudents = new Form8();
             frmStudents.ShowDialog();
         }
 

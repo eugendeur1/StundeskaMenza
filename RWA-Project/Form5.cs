@@ -59,6 +59,7 @@ namespace RWA_Project
         {
             Form6 frmStudents = new Form6();
             frmStudents.ShowDialog();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -96,6 +97,11 @@ namespace RWA_Project
             {
                 MessageBox.Show("Molimo odaberite studenta kojeg želite da obrišete.");
             }
+        }
+
+        private void Form5_Load_1(object sender, EventArgs e)
+        {
+            LoadStudents();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace RWA_Project
 {
-    partial class Form5
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -29,51 +29,26 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(26, 38);
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(574, 385);
+            dataGridView1.Size = new Size(434, 449);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
-            // 
-            button1.Location = new Point(690, 133);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 59);
-            button1.TabIndex = 1;
-            button1.Text = "Add Student";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(690, 264);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 59);
-            button2.TabIndex = 2;
-            button2.Text = "Delete Student";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // Form5
+            // Form9
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(921, 549);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
-            Name = "Form5";
-            Text = "Student Settings";
-            Load += Form5_Load_1;
+            Name = "Form9";
+            Text = "Order List";
+            Load += Form9_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -81,7 +56,5 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
-        private Button button2;
     }
 }
