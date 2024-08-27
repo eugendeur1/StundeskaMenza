@@ -1,0 +1,4 @@
+Kada se projekt pokrene imate dvije opcije izabrati Stundenska Menza ili korisnička sluzba.
+za točan login za Studenu menzu potrebno je upisati: iz table Person Name=UserName, Title/status=password(što znaći da za Eugen Deur studenta ) Login biti-username:Eugen Deur ,password:IzvanRedni, a za korisničku službu je izprogramiran username i password unutar coda(username=sluzba,password=sluzba)
+Ovaj Zadatak je bio provjerava i usavršavanje rada s migracijama te razumjevanja rada s bazom podataka ali isto tako i funcionialnosti c#, tj, EF core. U bazi podataka postoje relationship 1:1 koji nije uobičajan ali je napravljen iz razloga da znam da to postoji i radi vježbe. te postoje 1:N, I MANUAL MAPPING ZA Many:Many
+Isto tako napravio sam da se zapamti Id studenta koji se ulogirtao te kada naruči jelo mu se tako i sprema u bazi podataka.
